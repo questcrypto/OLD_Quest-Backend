@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "Digics">
+
+<html xmlns="https://digicsstagingbucket.s3.us-east-2.amazonaws.com/email">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+    <title>Digics</title>
+
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #e5e5e5;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      h3 {
+        padding: 0;
+        margin: 0;
+      }
+      h4 {
+        padding: 0;
+        margin: 0;
+      }
+      h5 {
+        padding: 0;
+        margin: 0;
+      }
+      .mainWrapper {
+        max-width: 700px !important;
+        margin: auto;
+        text-align: center;
+        padding: 40px 0;
+        font-family: "Nunito Sans", sans-serif;
+        color: #2b3141;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+      .mainWrapper > a > img {
+        height: 50px;
+      }
+      .wrapper {
+        background-color: #ffffff;
+        padding: 40px 30px;
+        display: grid;
+        grid-row-gap: 20px;
+        text-align: initial;
+        font-family: "Nunito Sans", sans-serif;
+        margin-top: 20px;
+        line-height: 25px;
+        color: #2b3141;
+        font-size: 16px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+      .footer {
+        padding: 35px 10px 0 10px;
+      }
+
+      .socialMedia {
+        display: flex;
+        width: fit-content;
+        margin: 20px auto;
+      }
+      .socialMedia > a > img {
+        cursor: pointer;
+        height: 25px;
+        display: block;
+        margin: 0 7px;
+      }
+      .socialMedia > a > img:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <a href="https://app.careergig.com">
+        <img
+          src="https://digicsstagingbucket.s3.us-east-2.amazonaws.com/email/CareerGigLogo.png"
+          alt="CareerGig"
+        />
+      </a>
+      <div class="wrapper">
+        {{> @partial-block }}
+
+        <p style="margin-top: 15px !important">Thanks!</p>
+        <p style="margin-top: 10px !important">- The CareerGig Team</p>
+      </div>
+      <div class="footer">
+        <h5 style="font-size: 16px !important">Follow us</h5>
+        <div class="socialMedia">
+          <a href="https://www.linkedin.com/company/careergig">
+            <img
+              src="https://digicsstagingbucket.s3.us-east-2.amazonaws.com/email/linkedin.png"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="https://twitter.com/Career_Gig">
+            <img
+              src="https://digicsstagingbucket.s3.us-east-2.amazonaws.com/email/twitter.png"
+              alt="Twitter"
+            />
+          </a>
+          <a href="https://www.facebook.com/careergig/">
+            <img
+              src="https://digicsstagingbucket.s3.us-east-2.amazonaws.com/email/fb.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://www.instagram.com/careergig/">
+            <img
+              src="https://digicsstagingbucket.s3.us-east-2.amazonaws.com/email/insta.png"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+        <div style="padding-top: 20px !important">
+          <p>@Digics,Inc. All rights reserved.</p>
+        </div>
+        <p style="font-size: 12px !important; margin-top: 20px !important">
+          CareerGig, 3100 Clarendon Blvd #200, Arlington,VA 22201 USA
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

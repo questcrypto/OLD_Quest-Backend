@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "questdatabase.postgres.database.azure.com",
+  "username": "Rocksquare@questdatabase",
+  "password": "Twilight#911",
+  "database": "postgres",
+  "port": 5432,
+  "ssl": true,
+  "logging": false,
+  "synchronize": false,
+  "entities": ["F:\\codezero2API\\QuestBackedn\\src\\**/*.entity{.ts,.js}"],
+  "migrations": ["F:\\codezero2API\\QuestBackedn\\src\\migrations/*{.ts,.js}"]
+}
