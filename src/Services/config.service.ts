@@ -75,7 +75,6 @@ class ConfigService {
   }
 }
 const baseDir = path.join(__dirname, '../', '../');
-console.log(`${baseDir}/env/${process.env.NODE_ENV || 'development'}.env`);
 const configService = new ConfigService(
   `${baseDir}/env/${process.env.NODE_ENV || 'development'}.env`,
 );
