@@ -28,6 +28,7 @@ class ConfigService {
   }
 
   public getTypeORMConfig(): TypeOrmModuleOptions {
+    const isCompiled = path.extname(__filename).includes('js');
     const baseDir = path.join(__dirname, '../');
     const entitiesPath = `${baseDir}${this.envConfig.TYPEORM_ENTITIES}`;
     const migrationPath = `${baseDir}${this.envConfig.TYPEORM_MIGRATIONS}`;
@@ -42,6 +43,13 @@ class ConfigService {
       ssl: true,
       logging: false,
       synchronize: false,
+      autoReconnect: true,
+      reconnectTries: Number.MAX_VALUE,
+      reconnectInterval: 2000,
+      // entities: [`**/*.${isCompiled? "js" : "ts"}`],
+      // migrations: [`src/migrations/**/*.${isCompiled? "js" : "ts"}`],
+      // entities: [`src/entity/**/*.${isCompiled? "js" : "ts"}`],
+      // migrations: [`src/migration/**/*.${isCompiled? "js" : "ts"}`],
       entities: [entitiesPath],
       migrations: [migrationPath],
       // migrationsRun: this.envConfig.TYPEORM_MIGRATIONS_RUN === 'true',

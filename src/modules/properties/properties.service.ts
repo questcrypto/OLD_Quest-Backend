@@ -1000,6 +1000,7 @@ export class PropertiesService {
       const prop = v4();
       const PropertyDetail = {
         id: prop,
+        NftCid: body.NftCid,
         Fname: body.Fname,
         Lname: body.Lname,
         Email: body.Email,
@@ -1191,7 +1192,7 @@ export class PropertiesService {
       var propertyDetail = await getPropertyBy({ id });
       console.log(propertyDetail);
       if (propertyDetail) {
-        var data = {
+        var data:any = {
           Fname: body.Fname,
           Lname: body.Lname,
           Email: body.Email,
@@ -1239,6 +1240,9 @@ export class PropertiesService {
           WaterShare: body.WaterShare,
           Spa: body.Spa,
         };
+        if(body.NftCid){
+          data.NftCid = body.NftCid;
+        }
 
         var floorArr: FloorDetail = JSON.parse(
           JSON.parse(JSON.stringify(body.FloorDetails)),

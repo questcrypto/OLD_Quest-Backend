@@ -136,6 +136,10 @@ export class ApprovedbyOwner {
 export class basePropertyDTO {
   @ApiProperty()
   @IsString()
+  NftCid : string;
+
+  @ApiProperty()
+  @IsString()
   Fname: string;
 
   @ApiProperty()

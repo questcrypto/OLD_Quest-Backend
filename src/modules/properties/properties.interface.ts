@@ -18,6 +18,7 @@ export class IFetchUnreadComment {
 
 export interface propertData {
   id: string;
+  NftCid: string;  
   Fname: string;
   Lname: string;
   Email: string;
@@ -166,4 +167,5 @@ export enum propertyCommentKey {
   WATERSHARE = 44,
   SPA = 45,
   IMAGES = 46,
+  NFTCID = 47,
 }

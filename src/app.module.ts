@@ -21,13 +21,13 @@ import { WebsocketGateway } from './modules/websocket/websocket.gateway';
 
 @Module({
   imports: [
-    // ServeStaticModule.forRoot({
-    // rootPath:join(__dirname,'..','upload'),
-    // serveStaticOptions:{
-    //   index:false,
-    // },
+    ServeStaticModule.forRoot({
+      rootPath:join(__dirname,'..','upload'),
+      serveStaticOptions:{
+        index:false,
+      },
 
-    // }),
+    }),
     ConfigModule,
     UserModule,
     PropertiesModule,

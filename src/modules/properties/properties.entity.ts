@@ -27,6 +27,9 @@ export class PropertyEntity extends CreatedModified implements propertData {
   id: string;
 
   @Column()
+  NftCid: string;
+
+  @Column()
   Fname: string;
 
   @Column()
