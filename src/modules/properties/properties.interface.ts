@@ -30,7 +30,7 @@ export interface propertData {
   YearBuilt: Date;
   Zoning: string;
   Landscaping: string;
-  Lotfacts: number;
+  Lotfacts: string;
   Address1: string;
   Address2: string;
   City: string;

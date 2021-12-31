@@ -183,8 +183,8 @@ export class basePropertyDTO {
   Landscaping: string;
 
   @ApiProperty()
-  @IsNumber()
-  Lotfacts: number;
+  @IsString()
+  Lotfacts: string;
 
   @ApiProperty()
   @IsString()

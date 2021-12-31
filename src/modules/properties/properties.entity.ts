@@ -62,8 +62,9 @@ export class PropertyEntity extends CreatedModified implements propertData {
   @Column()
   Landscaping: string;
 
-  @Column({ type: 'double precision' })
-  Lotfacts: number;
+  @Column()
+  Lotfacts: string;
+  
   @Column()
   Address1: string;
   @Column()
